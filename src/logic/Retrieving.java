@@ -39,6 +39,9 @@ import storage.FileQuerying;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.DocumentBuilder;
 
+/**
+* fetches the chosen arraylist
+*/
 public class Retrieving 
 {
 	public static ArrayList<Application> apps = new ArrayList<Application>();
@@ -172,7 +175,9 @@ public class Retrieving
 	       
 	}*/
 	
-	//the method writes the processed reviews of an application in a tab delimited file
+	/**
+	*the method writes the processed reviews of an application in a tab delimited file
+	*/
 	public static void storeReviews(ArrayList<Review> revs, String fileName)
 	{
 		
@@ -194,7 +199,9 @@ public class Retrieving
 		}
 	}
 	
-	//the method retrieves the reviews of an application and stores them in a tab delimited file
+	/**
+	* the method retrieves the reviews of an application and stores them in a tab delimited file
+	*/
 	public static void processReviewMSR(String file)
 	{
 		ArrayList<Review> revs = new ArrayList<Review>();	
@@ -203,7 +210,9 @@ public class Retrieving
 	}
 	
 	
-	
+	/**
+	* attempts to open file, catches if problem occurs to print error message
+	*/
 	public static void createAppsMap()
 	{
 		try
@@ -224,6 +233,9 @@ public class Retrieving
 		}
 	}
 	
+	/**
+	* creates an arraylist of reviews
+	*/
 	public static ArrayList<Review> retrieveReviewsMSR(String fileName)
 	{
 		ArrayList<Review> revs = new ArrayList<Review>();	
@@ -326,6 +338,9 @@ public class Retrieving
 	        }
 	       
 	}
+	/**
+	* a for loop to list the reviews with numbers
+	*/
 	public static void main(String[] args)
 	{
 		for (int i = 73; i < 241; i++)
