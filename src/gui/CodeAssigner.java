@@ -74,6 +74,9 @@ public class CodeAssigner extends JFrame implements ActionListener, ItemListener
 	JComboBox refined;
 	JTextField raw;
 	
+	/**
+	*creates a UI with buttons so users may interact with code simply
+	*/
 	public CodeAssigner (String fileName, int status)
 	{
 
@@ -182,6 +185,10 @@ public class CodeAssigner extends JFrame implements ActionListener, ItemListener
 	    setDefaultCloseOperation(EXIT_ON_CLOSE);
 	}
 	
+	/**
+	* method to be run when button is selected
+	* checks which button has been selected using if/else statements
+	*/
 	public void actionPerformed(ActionEvent e) 
 	{
 		
