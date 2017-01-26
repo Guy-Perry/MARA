@@ -187,7 +187,7 @@ public class CodeAssigner extends JFrame implements ActionListener, ItemListener
 	
 	/**
 	* method to be run when button is selected
-	* checks which button has been selected using if/else statements
+	* checks which button has been selected using if/else statements and runs their code
 	*/
 	public void actionPerformed(ActionEvent e) 
 	{
@@ -233,6 +233,9 @@ public class CodeAssigner extends JFrame implements ActionListener, ItemListener
 		
 	}	
 	
+	/**
+	* updates application if item needs to be removed
+	*/
 	public void itemStateChanged(ItemEvent evt)
 	{
 		JComboBox classes = (JComboBox)evt.getSource();
