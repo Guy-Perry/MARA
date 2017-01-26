@@ -234,7 +234,7 @@ public class CodeAssigner extends JFrame implements ActionListener, ItemListener
 	}	
 	
 	/**
-	* updates application if item needs to be removed
+	* manages the comboBox (dropdown) selecting the users choice
 	*/
 	public void itemStateChanged(ItemEvent evt)
 	{
@@ -253,7 +253,9 @@ public class CodeAssigner extends JFrame implements ActionListener, ItemListener
 	
 	
 //////////////////////////////////////////////////////////////	
-	
+	/**
+	* gets review file information, if this cannot be done print error message
+	*/
 	public void loadReviews(String fileName)
 	{
 		
